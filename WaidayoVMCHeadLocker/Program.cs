@@ -10,6 +10,7 @@ namespace WaidayoVMCHeadLocker
     {
         static void Main(string[] args)
         {
+            new Main().Process();
         }
     }
 }
