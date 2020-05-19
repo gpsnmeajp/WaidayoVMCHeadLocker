@@ -168,7 +168,7 @@ namespace WaidayoVMCHeadLocker
                 float qz = (float)message[6];
                 float qw = (float)message[7];
 
-                object[] arg = new object[]{ "HeadLockTracker",tx,ty,tz, qx,qy,qz,qw};
+                object[] arg = new object[]{ "HeadLockTracker",tx,ty,tz, -qx,qy, -qz,qw};
                 OscMessage m = new OscMessage("/VMC/Ext/Tra/Pos", arg);
                 OSCtoVMC.Send(m);
                 Console.WriteLine(m);
